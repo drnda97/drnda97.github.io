@@ -1,5 +1,33 @@
 @media only screen and (max-width: 600px) {
     /* header */
+    header nav{
+        display: none;
+        width: 100% !important;
+        left: 0 !important;
+        top: 0 !important;
+        background-color: rgba(255, 255, 255, .5);
+    }
+    header nav ul{
+        background-color: rgba(255, 255, 255, .5);
+    }
+    header nav ul li{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    header nav ul li a.close{
+        display: block !important;
+    }
+    header div.responsive{
+        display: block !important;
+        padding: 5%;
+        text-align: left;
+        font-size: 30px;
+    }
+    header div#home{
+        padding-top: 1%;
+    }
     header div h1{
         font-size: 32px !important;
     }
@@ -31,16 +59,21 @@
         width: 100%;
     }
     /* work */
+    div#work{
+        width: 100%;
+        overflow: hidden;
+    }
     div#work section{
         width: 100%;
+        padding: 0;
     }
     div#work section h1{
         width: 45%;
     }
     div#work section a img{
         display: block;
-        width: 80% !important;
-        margin: 10px 10%;
+        width: 90% !important;
+        margin: 10px auto;
     }
     /* resume */
     div#resume section.wrapper-section{

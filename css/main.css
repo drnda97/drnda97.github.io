@@ -22,6 +22,12 @@ html{
 	height: 1px;
 	visibility: hidden;
 }
+div.responsive{
+	display: none !important;
+}
+header nav ul li a.close{
+	display: none;
+}
 #index{
 	margin: 0;
 	padding: 0;
@@ -46,7 +52,7 @@ header nav{
 header div{
 	display: block !important;
 	clear: both;
-	padding-top: 20%;
+	padding-top: 15%;
 }
 header div h1{
 	font-size: 4em;
