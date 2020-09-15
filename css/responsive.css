@@ -81,6 +81,7 @@
     }
     div#resume section.wrapper-section h1{
         font-size: 18px;
+        text-align: center;
         width: 90%;
     }
     div#resume section.wrapper-section section{
