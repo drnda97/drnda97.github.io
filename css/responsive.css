@@ -1,0 +1,73 @@
+@media only screen and (max-width: 600px) {
+    /* header */
+    header div h1{
+        font-size: 32px !important;
+    }
+    header div p{
+        font-size: 20px !important;
+    }
+    .wrapper{
+        width: 100% !important;
+    }
+    /* about */
+    div#about h1{
+        width: 50% !important;
+        font-size: 20px !important;
+    }
+    div#about > .wrapper{
+        flex-direction: column;
+    }
+    div#about > .wrapper div.img{
+        width:100% !important;
+        text-align: center;
+    }
+    div#about > .wrapper div.img img{
+        width: 40%;
+    }
+    div#about > .wrapper div.half{
+        width: 100%;
+    }
+    div#about > .wrapper div.half p{
+        width: 100%;
+    }
+    /* work */
+    div#work section{
+        width: 100%;
+    }
+    div#work section h1{
+        width: 45%;
+    }
+    div#work section a img{
+        display: block;
+        width: 80% !important;
+        margin: 10px 10%;
+    }
+    /* resume */
+    div#resume section.wrapper-section{
+        width: 100% !important;
+    }
+    div#resume section.wrapper-section h1{
+        font-size: 19px;
+        width: 90%;
+    }
+    div#resume section.wrapper-section section{
+        flex-direction: column;
+    }
+    div#resume section.wrapper-section section > h2{
+        padding-top: 0 !important;
+        padding-bottom: 40px;
+    }
+    div#resume section.wrapper-section section h2,
+    div#resume section.wrapper-section section div.resume-half{
+        width: 100%;
+        text-align: center;
+    }
+    /* contact */
+    div#contact h1{
+        width: 90%;
+        font-size: 20px;
+    }
+    div#contact section.wrapper div.contact-half{
+        flex-direction: column;
+    }
+}
