@@ -218,13 +218,31 @@ footer div.wrapper ul li a:hover{
 	background-color: #252525;
 	color: #fff;
 }
+#about div.wrapper{
+	display: flex;
+}
+#about div.wrapper div.img{
+	width: 30%;
+}
 #about div.half{
 	width: 50%;
 	float: left;
 	font-family: 'pollerone';
 }
-#about div.half img{
-	width: 20%;
+#about div.half p{
+	color: lightslategray;
+	font-weight: bolder;
+}
+#about div.half a{
+	color: #252525;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+#about div.half a:hover{
+	color: #0ba39c;
+}
+#about div.img img{
+	width: 50%;
 	border-radius: 30%;
 }
 #about h4{
