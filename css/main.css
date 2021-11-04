@@ -32,9 +32,12 @@ header nav ul li a.close{
 	margin: 0;
 	padding: 0;
 }
+.text-light {
+	color: #ffffff;
+}
 header{
 	width: 100%;
-	background-image: url(../images/header-image.jpg);
+	background-image: url(../images/blured.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -44,9 +47,10 @@ header{
 }
 header nav{
 	position: fixed;
-	top: 2%;
-	left: 20%;
-	width: 60%;
+	top: 0%;
+	width: 100%;
+	padding: 30px 0;
+	background-color: rgba(0, 0, 0, .4);
 	z-index: 999999;
 }
 header div{
@@ -68,24 +72,27 @@ header div ul.social{
 	margin: 0 auto;
 }
 header div ul.social li{
-	width: 20%;
+	width: 50%;
 	font-size: 2em;
+}
+header div ul.social li a:hover{
+	color: #0b48a3;
 }
 header img{
 	display: block;
 	margin: 35px auto;
 }
 header ul{
+	display: flex;
 	list-style: none;
 	padding-left: 0;
 	width: 100%;
 }
 header ul li{
-	float: left;
 	text-transform: uppercase;
 	font-family: 'pollerone';
 	font-size: 13px;
-	width: 20%;
+	width: 25%;
 }
 header ul li a{
 	text-decoration: none;
@@ -93,10 +100,13 @@ header ul li a{
 	padding: 15px;
 }
 header ul li a:hover{
-	color: #0ba39c;
+	color: #0b48a3;
 }
 header ul li:target a{
-	color: #0ba39c;
+	color: #0b48a3;
+}
+#home h1{
+	margin-bottom: 15%;
 }
 main{
 	position: relative;
@@ -162,6 +172,10 @@ main a{
 	background-color: #0ba39c;
 	text-decoration: none;
 }
+.address{
+	display: flex;
+	flex-direction: column;
+}
 .wrapper{
 	width: 1200px;
 	margin: 0 auto;
@@ -188,7 +202,7 @@ main a{
 	font-size: 22px;
 }
 footer{
-	background-color: #252525;
+	background-color: #0b48a3;
 }
 footer div.wrapper ul{
 	width: 100%;
@@ -197,7 +211,7 @@ footer div.wrapper ul{
 	padding: 3% 0;
 }
 footer div.wrapper ul li{
-	width: 20%;
+	width: 50%;
 	text-align: center;
 	font-size: 2em;
 }
@@ -205,66 +219,7 @@ footer div.wrapper ul li a{
 	color: lightslategray;
 }
 footer div.wrapper ul li a:hover{
-	color: #0ba39c;
-}
-
-/*<========================about==============================>*/
-#about{
-	text-align: center;
-	padding: 30px;
-}
-#about h1{
-	width: 20%;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	padding: 15px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-family: 'pollerone';
-	background-color: #252525;
-	color: #fff;
-}
-#about div.wrapper{
-	display: flex;
-}
-#about div.wrapper div.img{
-	width: 30%;
-}
-#about div.half{
-	width: 50%;
-	float: left;
-	font-family: 'pollerone';
-}
-#about div.half p{
-	color: lightslategray;
-	font-weight: bolder;
-}
-#about div.half a{
-	color: #252525;
-	font-size: 1.2em;
-	text-decoration: none;
-}
-#about div.half a:hover{
-	color: #0ba39c;
-}
-#about div.img img{
-	width: 50%;
-	border-radius: 30%;
-}
-#about h4{
-	font-family: sans-serif;
-	margin-bottom: 5px;
-	color: #252525;
-}
-#about p{
-	width: 600px;
-	margin: 0 auto;
-	font-family: sans-serif;
-	font-size: 13px;
-	line-height: 2;
-}
-#about .last-in-about{
-	margin-bottom: 55px;
+	color: #000;
 }
 /*======================work=============================*/
 #work{
@@ -283,14 +238,14 @@ footer div.wrapper ul li a:hover{
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-family: 'pollerone';
-	background-color: #252525;
+	background-color: #0b48a3;
 	color: #fff;
 }
 #work p{
 	text-align: center;
     font-weight: bold;
     font-family: 'pollerone';
-    color: #252525;
+    color: #0b48a3;
 }
 #work section img{
 	border-bottom: 2px solid lightslategrey;
@@ -304,7 +259,7 @@ footer div.wrapper ul li a:hover{
 	opacity: 1;
 	cursor: pointer;
 }
-/*=================blog===========================*/
+/*=================resume===========================*/
 .wrapper-section{
 	width: 1000px;
 	margin: 55px auto;
@@ -317,7 +272,7 @@ footer div.wrapper ul li a:hover{
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-family: 'pollerone';
-	background-color: #252525;
+	background-color: #0b48a3;
 	color: #fff;
 }
 .wrapper-section section{
@@ -326,8 +281,12 @@ footer div.wrapper ul li a:hover{
 	margin-bottom: 15px;
 	text-align: center; 
 }
+.wrapper-section section.card-block h2{
+	color: #0b48a3;
+}
 .wrapper-section section div.resume-half{
 	width: 60%;
+	color: #0b48a3;
 	text-align: left;
 	font-family: 'pollerone';
 }
@@ -355,7 +314,7 @@ footer div.wrapper ul li a:hover{
 	color: #252525;
 }
 .wrapper-section section a:hover{
-	color: #0ba39c;
+	color: #0b48a3;
 }
 /*==============contact===============*/
 #contact{
@@ -374,7 +333,7 @@ footer div.wrapper ul li a:hover{
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'pollerone';
-    background-color: #252525;
+    background-color: #0b48a3;
     color: #fff;
 }
 #contact section.wrapper div.contact-half{
@@ -385,8 +344,10 @@ footer div.wrapper ul li a:hover{
 }
 #contact section.wrapper div.contact-half div{
 	width: 100%;
+	color:  #0b48a3;
 }
 #contact section.wrapper div.contact-half div i{
+	color:  #0b48a3;
 	font-size: 4em;
 }
 #contact section.wrapper div.contact-half div h3{
@@ -394,8 +355,8 @@ footer div.wrapper ul li a:hover{
 }
 #contact section.wrapper div.contact-half div a{
 	text-decoration: none;
-	color:  #252525;
+	color:  #0b48a3;
 }
 #contact section.wrapper div.contact-half div a:hover{
-	color: #0ba39c;
+	color: #000;
 }

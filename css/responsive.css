@@ -29,7 +29,9 @@
         padding-top: 1%;
     }
     header div h1{
+        padding-top: 10%;
         font-size: 32px !important;
+        padding-bottom: 50%;
     }
     header div p{
         font-size: 20px !important;
